@@ -10,11 +10,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
+    res.status(200);
     res.render('pages/index.ejs')
 });
 
 app.get('/moonphase', function(req, res) {
     let moonphase = Math.round(suncalc.getMoonIllumination(new Date()).phase*100)/100;
+    res.status(200);
     res.render('pages/moonphase.ejs', {"moonphaseValue": String(moonphase)});
 });
 

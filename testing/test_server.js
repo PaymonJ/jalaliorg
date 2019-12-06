@@ -5,7 +5,7 @@ var should = chai.should();
 
 chai.use(chaihttp);
 
-describe('Blobs', function() {
+describe('Test server routes', function() {
     it('should GET / with status 200', function(done) {
         chai.request(server)
             .get('/')

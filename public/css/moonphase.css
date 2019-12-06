@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+*{
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  -webkit-animation: fadein 2s;
+}
+
+p{
+	font-size: 54px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#footer{
+  position: absolute;
+  font-size: 12px;
+  color: #FFFFFF;
+  bottom: 10px;
+  left: 10px;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*NEW MOON*/
+.new {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #070707;
+}
+
+/*WAXING CRESCENT*/
+.waxingCrescent {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset -30px 0px #FFFFFF, inset 200px 0px #070707;
+  position:relative;
+}
+.waxingCrescent:before{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  border: 2px solid #000000;
+  top:-1px;
+  right:-1px;
+  bottom:-1px;
+  left:-1px;
+}
+
+/*FIRST QUARTER*/
+.firstQuarter{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, #070707 50%, #FFFFFF 50%);
+}
+
+/*WAXING GIBBOUS*/
+.waxingGibbous {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 60px 0px 0px -15px #070707, inset 200px 0px #FFFFFF;
+  position:relative;
+}
+.waxingGibbous:before{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  border: 2px solid #000000;
+  top:-1px;
+  right:-1px;
+  bottom:-1px;
+  left:-1px;
+}
+
+/*FULL MOON*/
+.full {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #FFFFFF;
+}
+
+/*WANING GIBBOUS*/
+.waningGibbous {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset -60px 0px 0px -15px #070707, inset 200px 0px #FFFFFF;
+  position:relative;
+}
+.waningGibbous:before{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  border: 2px solid #000000;
+  top:-1px;
+  right:-1px;
+  bottom:-1px;
+  left:-1px;
+}
+
+/*THIRD QUARTER*/
+.thirdQuarter{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, #FFFFFF 50%, #070707 50%);
+}
+
+/*WANING CRESCENT*/
+.waningCrescent {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 30px 0px #FFFFFF, inset 200px 0px #070707;
+  position:relative;
+}
+.waningCrescent:before{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  border: 2px solid #000000;
+  top:-1px;
+  right:-1px;
+  bottom:-1px;
+  left:-1px;
+}

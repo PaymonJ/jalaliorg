@@ -20,6 +20,11 @@ app.get('/moonphase', function(req, res) {
     res.render('pages/moonphase.ejs', {"moonphaseValue": String(moonphase)});
 });
 
+app.get('*', function(req, res) {
+    res.status(404);
+    res.render('pages/404.ejs');
+});
+
 let server = http.listen(PORT, function() {
     console.log(`listening http index.js Port: ${PORT}`);
 });

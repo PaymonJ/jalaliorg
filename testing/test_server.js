@@ -1,7 +1,8 @@
 const chai = require('chai');
-var chaihttp = require('chai-http');
-var server = require('../server');
-var should = chai.should();
+const chaihttp = require('chai-http');
+const server = require('../server');
+const suncalc = require('suncalc');
+const should = chai.should();
 
 chai.use(chaihttp);
 
@@ -29,5 +30,10 @@ describe('Test server routes', function() {
                 res.should.have.status(404);
                 done();
             });
+    });
+    it('should get a value between 0 and 1 for moonphase', function(done) {
+        let moonphase = Math.round(suncalc.getMoonIllumination(new Date()).phase*100)/100;
+        moonphase.should.be.within(0, 1);
+        done();
     });
 });

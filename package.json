@@ -8,7 +8,7 @@
   },
   "author": "paymon",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "suncalc": "^1.8.0"

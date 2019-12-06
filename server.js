@@ -28,3 +28,5 @@ app.get('*', function(req, res) {
 let server = http.listen(PORT, function() {
     console.log(`listening http index.js Port: ${PORT}`);
 });
+
+module.exports = app;

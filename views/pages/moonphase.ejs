@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=390">
     <link rel="stylesheet" type="text/css" href="css/moonphase.css" />
   </head>
-  <body>
+  <body onload="readAndCallPhase()">
     <input type="hidden" id="phaseValue" value="<%= moonphaseValue %>"/>
     <div id="moon"></div>
     <p id="phase"></p>
